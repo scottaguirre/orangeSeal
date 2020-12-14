@@ -4,14 +4,14 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
-        link(href="http://localhost/dist/css/index.css" rel="stylesheet")
     body
-        main#home-page
+        .overlay-effect-container
+            .initial-overlay-effect
+        main#home-page  
             include ../components/header.pug
             include ../components/hero.pug
-            include ../components/second-section.pug
-            include ../components/form-section.pug
             include ../components/carousel.pug
-            //- include ../components/footer.pug
-        script(src="http://localhost/dist/js/index.js")
-        
+            include ../components/form-section.pug
+            include ../components/second-section.pug
+            include ../components/banner-last-section.pug
+            include ../components/footer.pug

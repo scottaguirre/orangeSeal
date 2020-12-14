@@ -1,6 +1,5 @@
-//import 'jquery/dist/jquery.slim.js';
-//import 'popper.js';
+import { menu, carousel, initialOverlayEffect } from './components';
 
-import { menu } from './components';
-
+initialOverlayEffect();
 menu();
+carousel();

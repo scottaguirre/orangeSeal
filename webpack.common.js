@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const glob = require("glob");
+const webpack = require('webpack');
 
 
 module.exports = {
@@ -52,6 +53,11 @@ module.exports = {
         ]
     },
     plugins: [
+
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
         new ImageminPlugin({
             externalImages: {
               sources: glob.sync("src/images/**/*.{png,jpg,jpeg,gif,svg}"),

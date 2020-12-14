@@ -8,19 +8,19 @@
 }
 
 .row.second-section-row {
-  padding: 80px 20px;
+  padding: 100px 20px;
 
   .col-md-7 {
     position: relative;
     //background: red;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
     @include m-screen {
       //background: red;
       order: 2;
-      //margin-bottom: initial;
+      margin-bottom: 50px;
     }
 
     .first-image,
@@ -64,9 +64,11 @@
       }
     }
   }
+
   .col-md-5 {
     padding-left: 35px;
     padding-right: 35px;
+
     h2 {
       font-style: italic;
       font-weight: bold;
@@ -76,4 +78,5 @@
       order: 1;
     }
   }
+
 }

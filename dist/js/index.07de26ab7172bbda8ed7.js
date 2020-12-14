@@ -1,1 +1,0 @@
-!function(){"use strict";(function(){var e=document.querySelector(".cover"),c=document.querySelector(".menu-container"),n=document.querySelector(".hamburger"),t=!1;e.addEventListener("click",(function(){t?(n.classList.remove("open"),c.classList.remove("open"),t=!t):(n.classList.add("open"),c.classList.add("open"),t=!t)}))})()}();
